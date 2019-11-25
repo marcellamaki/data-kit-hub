@@ -37,28 +37,12 @@ url: "https://opportunity.census.gov" # the base hostname & protocol for your si
 
 # Site Navigation
 primary_navigation:
-  - name: Home
+  - name: Main Website
     url: /
-  - name: Blog
-    url: /blog/
-  - name: Document
-    url: /document/
-  - name: Document with sidenav
-    url: /document-with-sidenav/
-  - name: Document submenu
-    children:
-      - name: Navigation link
-        url: '#main-content'
-      - name: Navigation link
-        url: '#main-content'
-      - name: Navigation link
-        url: '#main-content'
 
 secondary_navigation:
-  - name: Secondary link
-    url: '#main-content'
-  - name: Another secondary link
-    url: '#main-content'
+  - name: Data Kits
+    url: '/data-packs'
 
 # Search.gov configuration
 #
@@ -195,3 +179,4 @@ exclude:
   - package-lock.json
   - README.md
   - src
+  - .sass-cache
