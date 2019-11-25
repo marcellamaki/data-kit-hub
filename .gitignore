@@ -1,8 +1,10 @@
 # Ignore MacOS DS File
 .DS_Store
-
-# Ignore sass cache
-.sass-cache/
-
-# Ignore jekyll-built site folder
-_site/
+.sass-cache
+_site
+.jekyll-metadata
+node_modules
+assets/js
+assets/uswds
+_sass/uswds
+.bundle
