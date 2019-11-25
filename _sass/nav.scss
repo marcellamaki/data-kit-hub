@@ -1,0 +1,19 @@
+.usa-nav {
+  height: 5rem;
+  border: none;
+  width: 100%;
+  .nav-left {
+    float: left;
+    max-width: 20rem;
+  }
+  .nav-right {
+    float: right;
+    max-width: 20rem;
+  }
+  .nav-left ul,
+  .nav-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
