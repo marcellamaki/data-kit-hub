@@ -1,0 +1,17 @@
+{% comment %}
+This template is the base for the data pack web app
+{% endcomment %}
+
+{% include header.html %}
+{% include nav.html primary_navigation=site.primary_navigation  secondary_navigation=site.secondary_navigation %}
+
+{% if page.title == "Home" %}
+<main class="landing-container" id="main-content">
+{% else %}
+<main id="main-content">
+{% endif %}
+
+  {{ content }}
+</main>
+
+{% include footer.html %}

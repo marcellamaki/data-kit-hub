@@ -7,10 +7,20 @@
 $theme-font-path:   '../uswds/fonts';
 $theme-image-path:  '../uswds/img';
 @import "uswds/uswds";
+@import "uswds_overrides";
+@import 'mixins';
+@import "typography";
 @import "variables";
 @import "nav";
-@import "uswds_overrides";
-@import "typography";
+@import "links";
+@import "banner";
+@import "landing";
+@import "hero";
+@import "tag";
+@import "data-pack";
+@import "modal";
+@import "footer";
+
 
 // This is the main CSS file. You can write your SCSS/SASS in _sass and import
 // them here. You probably want to load them _after_ uswds in order to override

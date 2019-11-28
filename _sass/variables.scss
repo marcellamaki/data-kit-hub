@@ -1,7 +1,33 @@
 // colors
 $color-primary: #004280;
 $color-primary-dark: #13192F;
-
 $color-secondary: #F7C636;
 
 $color-white: #FFFFFF;
+
+$color-primary-rgb: 0, 66, 128;
+$color-primary-dark-rgb: 19, 25, 47;
+$color-white-rgb: 255, 255, 255;
+
+// Font sizes
+$font-size-xxs: 1.2rem;
+$font-size-xs: 1.3rem;
+$font-size-s: 1.6rem;
+$font-size-m: 1.8rem;
+$font-size-l: 2.1rem;
+$font-size-xl: 3.6rem;
+$font-size-xxl: 4.8rem;
+
+// Site width
+$large-screen: 960px;
+$nav-width: 1500px;
+
+// Character spacing
+$kern-loose: 2px;
+
+// Line height
+$line-height-m: 2.5rem;
+$line-height-xl: 4.7rem;
+
+// Typography
+$font-sans: 'silka', Helvetica, sans-serif;

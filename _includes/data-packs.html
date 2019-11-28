@@ -1,0 +1,46 @@
+{% assign data-packs = site.data.data-packs %}
+
+<div class="grid-container">
+  <div class="grid-row grid-gap-lg">
+    {% for pack in data-packs limit:3 %}
+    <div class="tablet:grid-col data-pack__container">
+      <a class="data-pack__button" href="{{site.baseurl}}{{pack.link}}">
+        {% if pack.upcoming %}
+        <div class="data-pack__card" style="background-image: url('{{ pack.image | relative_url }}')">
+        {% else %}
+        <div class="data-pack__card data-pack__active" style="background-image: url('{{ pack.image | relative_url }}')">
+          {% endif %}
+          <h2>{{pack.title}}</h2>
+          <p>{{pack.description}}</p>
+          {% if pack.upcoming %}
+          {% else %}
+          <img class="data-pack__arrow" src="{{site.baseurl}}/assets/images/icons/right-arrow.svg" alt="Right Arrow" />
+          {% endif %}
+        </div>
+      </a>
+      <div class="data-pack__bg">
+        {% if pack.upcoming %}
+        <div class="data-pack__upcoming">
+          Coming Soon
+        </div>
+        {% else %}
+        <div class="data-pack__stats">
+          <img class="data-pack__icon-items" src="{{site.baseurl}}/assets/images/icons/items.svg" alt="Icon for number of datasets"/>
+          <p>{{pack.datasets}}</p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+    <div class="tablet:grid-col">
+      <a class="data-pack__button" href="#">
+        <div class="data-pack__suggest">
+          <img class="data-pack__icon-suggestion"
+          src="{{site.baseurl}}/assets/images/icons/suggestion.svg"
+          alt="Icon for suggestions" />
+          <p>Suggest a theme</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

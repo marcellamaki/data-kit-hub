@@ -1,0 +1,42 @@
+.usa-hero {
+  background-image: none;
+  margin: 5rem 0;
+  .grid-container {
+    border-bottom: 5px solid $color-secondary;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.usa-hero__callout {
+  max-width: 60rem;
+  background-color: $color-primary;
+  padding-left: 0;
+
+  .usa-hero__heading {
+    font-size: $font-size-xxl;
+    font-family: $font-sans;
+    font-weight: 700;
+    ::after {
+      content: 'Beta';
+      text-transform: uppercase;
+      font-size: $font-size-xxs;
+      color: $color-primary-dark;
+      letter-spacing: 0.8px;
+      padding: 0.5rem;
+      background-color: $color-secondary;
+      border-radius: 4px;
+      margin-left: 1.5rem;
+      vertical-align: baseline;
+      position: relative;
+      top: -8px;
+    }
+  }
+  p {
+    font-family: $font-sans;
+    font-size: $font-size-m;
+    font-weight: 400;
+    line-height: 31px;
+    margin-top: 1rem;
+  }
+}

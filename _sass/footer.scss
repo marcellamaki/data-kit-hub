@@ -1,0 +1,21 @@
+.usa-footer {
+  background-color: $color-primary;
+  text-align: center;
+  padding: 20rem 0;
+
+  .data-source__button {
+    background-color: transparent;
+    border: none;
+  }
+  .data-source {
+
+    p {
+      font-family: $font-sans;
+      font-weight: 500;
+      color: $color-white;
+      font-size: $font-size-s;
+      line-height: 30px;
+      border-bottom: 1.5px dotted $color-secondary;
+    }
+  }
+}
