@@ -1,9 +1,12 @@
 ---
-title: Home
+title: Workforce
 layout: base
 permalink: /workforce/
 hero:
-  text: Data Packs
-  subtext: Federal open data resources. Curated by government experts, test-driven by industry, and organized into starter packs to help you innovate the nation’s biggest challenges.
-  tag: Beta
+  text: Workforce Issues
+  subtext: Datasets on workers, businesses, jobs, credentials, and more, recommended by government experts for solving key workforce challenges.
+  tag: Data Kit
+  image: /assets/images/hero/workforce.png
 ---
+
+{% include hero.html %}

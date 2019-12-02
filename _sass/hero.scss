@@ -40,3 +40,37 @@
     margin-top: 1rem;
   }
 }
+
+.interior-hero {
+  position: relative;
+  z-index: 5;
+  padding-top: 8rem;
+  &__bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 4.5rem;
+  }
+  &__callout {
+    @extend .usa-hero__callout;
+    background-color: transparent;
+    color: $color-white;
+    &:first-child::before {
+      content: 'Data Kit';
+      text-transform: uppercase;
+      font-size: $font-size-xxs;
+      color: $color-primary-dark;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      padding: 0.5rem;
+      border-radius: 4px;
+      background-color: $color-secondary;
+    }
+  }
+  &__title {
+    font-size: $font-size-xxl;
+    font-family: $font-sans;
+    font-weight: 700;
+    color: $color-white;
+    margin-bottom: 0;
+  }
+}
