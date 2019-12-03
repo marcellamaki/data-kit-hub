@@ -1,4 +1,3 @@
-# Ignore MacOS DS File
 .DS_Store
 .sass-cache
 _site
@@ -6,4 +5,5 @@ _site
 node_modules
 assets/js
 assets/uswds
+_sass/uswds
 .bundle
