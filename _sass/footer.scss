@@ -19,3 +19,52 @@
     }
   }
 }
+
+.modal {
+  background-color: RGB($color-primary-dark-rgb, 0.9);
+  position: fixed;
+  z-index: 12;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--hidden {
+    display: none;
+  }
+  &__contents {
+    max-width: 50rem;
+    background-color: $color-primary;
+    padding: 2rem 4rem;
+    color: $color-white;
+    font-family: $font-sans;
+    h3 {
+      font-weight: 700;
+      font-size: $font-size-xl;
+      margin-bottom: 1.5rem;
+    }
+    &-p {
+      font-weight: 400;
+      font-size: $font-size-s;
+      line-height: $line-height-s;
+    }
+    &-close {
+      font-size: $font-size-xxs;
+      background-color: $color-primary;
+      border: none;
+      border-bottom: 1.5px dotted $color-secondary;
+      padding: 0 0 0.4rem 0;
+      text-align: center;
+      font-weight: 700;
+      display: block;
+      margin: 3rem auto;
+      color: $color-white;
+      transition: all 400ms ease;
+      &:hover {
+        cursor: pointer;
+        border-bottom-style: solid;
+      }
+    }
+  }
+}
