@@ -1,74 +1,514 @@
-- name: Census Business Builder
-  description: Includes building permits data that is not in the Census API yet.
-  agency: U.S. Census Bureau
-  link: https://www.census.gov/data/data-tools/cbb.html
-  poc: Andy Hait
-  email: Andrew.W.Hait@census.gov
-  problem-statement: Entrepreneurship
-  tags:
+---
+-
+    name: Census Business Builder
+    description: Includes building permits data that is not in the Census API yet.
+    agency: U.S. Census Bureau
+    link: https://www.census.gov/data/data-tools/cbb.html
+    poc: Andy Hait
+    email: Andrew.W.Hait@census.gov
+    problem-statement: entrepreneurship
     tag: Census Bureau Economic Data
-- name: American Community Survey - Available APIs
-  description: Resources for demographic information at the Census tract level, available in Census API.
-  agency: U.S. Census Bureau
-  link: https://www.census.gov/data/developers/data-sets.html
-  poc: Andy Hait
-  email: Andrew.W.Hait@census.gov
-  problem-statement: Zones
-  tags:
+-
+    name: American Community Survey - Available APIs
+    description: Resources for demographic information at the Census tract level, available in Census API.
+    agency: U.S. Census Bureau
+    link: https://www.census.gov/data/developers/data-sets.html
+    poc: Andy Hait
+    email: Andrew.W.Hait@census.gov
+    problem-statement: zones
     tag: Census Bureau Economic Data
-- name: Zip Code Business Patterns
-  description: Annual statistics for businesses with paid employees within the U.S. at the ZIP Code level. Information is available on the number of establishments, employment, first quarter payroll, and annual payroll.
-  agency: U.S. Census Bureau
-  link: https://www.census.gov/data/developers/data-sets/cbp-nonemp-zbp/zbp-api.html
-  poc: Andy Hait
-  email: Andrew.W.Hait@census.gov
-  problem-statement: Zones
-  tags:
+-
+    name: Zip Code Business Patterns
+    description: Annual statistics for businesses with paid employees within the U.S. at the ZIP Code level. Information is available on the number of establishments, employment, first quarter payroll, and annual payroll.
+    agency: U.S. Census Bureau
+    link: https://www.census.gov/data/developers/data-sets/cbp-nonemp-zbp/zbp-api.html
+    poc: Andy Hait
+    email: Andrew.W.Hait@census.gov
+    problem-statement: zones
     tag: Census Bureau Economic Data
-- name: USA Trade Data
-  description: Census Bureau holds monthly data that is very detailed geographically.
-  agency: U.S. Census Bureau
-  link: https://usatrade.census.gov/
-  poc: Andy Hait
-  email: Andrew.W.Hait@census.gov
-  problem-statement: Zones
-  tags:
+-
+    name: USA Trade Data
+    description: Census Bureau holds monthly data that is very detailed geographically.
+    agency: U.S. Census Bureau
+    link: https://usatrade.census.gov/
+    poc: Andy Hait
+    email: Andrew.W.Hait@census.gov
+    problem-statement: zones
     tag: Census Bureau Economic Data
-- name: American Community Survey - Demographic Data
-  description: Tract-level data on household characteristics; industry and occupation, broken out by demographic characteristics of workers.
-  agency: U.S. Census Bureau
-  link: https://www.census.gov/data/developers/data-sets/acs-5year.html
-  poc: Eric Coyle
-  email: Eric.A.Coyle@census.gov
-  problem-statement: Zones
-  tags:
+-
+    name: American Community Survey - Demographic Data
+    description: Tract-level data on household characteristics; industry and occupation, broken out by demographic characteristics of workers.
+    agency: U.S. Census Bureau
+    link: https://www.census.gov/data/developers/data-sets/acs-5year.html
+    poc: Eric Coyle
+    email: Eric.A.Coyle@census.gov
+    problem-statement: zones
+    tag: Census Bureau Demographic Data
+-
+    name: HUD Enterprise GIS
+    description: Web services for data including HUD, USDA, and Census.
+    agency: U.S. Department of Housing & Urban Development
+    link: http://hudgis-hud.opendata.arcgis.com/
+    poc: John Huggins
+    email: john.c.huggins@hud.gov
+    problem-statement: zones
+    tag: HUD Data
+-
+    name: Map of Opportunity zones and Affordable Housing
+    description: Public housing buildings, assisted multifamily properties, HUD-insured healthcare properties, Housing Choice Vouchers, LIHTC properties, USDA RD Developments, and Promise zones.
+    agency: U.S. Department of Housing & Urban Development
+    link: https://hud.maps.arcgis.com/apps/View/index.html?appid=cc05a273151d40a7b2eff47dc70bd745
+    poc: John Huggins
+    email: john.c.huggins@hud.gov
+    problem-statement: zones
+    tag: HUD Data
+-
+    name: Low-Income Housing Tax Credit Qualified Census Tracts
+    description: Difficult Development Areas (DDA) are areas with high land, construction and utility costs relative to the area median income and are based on Fair Market Rents, income limits, the 2010 census counts, and 5-year American Community Survey (ACS) data.
+    agency: U.S. Department of Housing & Urban Development
+    link: https://www.huduser.gov/portal/datasets/qct.html
+    poc: Mike Hollar
+    email: Michael.k.hollar@hud.gov
+    problem-statement: zones
+    tag: HUD Data
+-
+    name: Fair-Market Rent Data
+    description: Rent estimates at the 50th percentile (or median) are calculated for all Fair Market Rent areas.
+    agency: U.S. Department of Housing & Urban Development
+    link: https://www.huduser.gov/portal/datasets/50per.html
+    poc: Peter Kahn
+    email: peter.b.kahn@hud.gov
+    problem-statement: zones
+    tag: HUD Data
+-
+    name: Treasury ZIP Code Statistics of Income
+    description: ZIP Code data show selected income and tax items classified by State, ZIP Code, and size of adjusted gross income. Can be mapped to census tracts.
+    agency: Internal Revenue Service
+    link: https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-zip-code-data-soi
+    poc: Kevin Pierce
+    email: kevin.k.pierce@irs.gov
+    problem-statement: zones
+    tag: IRS Data
+-
+    name: Location of Energy Infrastructure
+    description: Includes data on sources of energy including power lines, power plants, coal mines, etc.
+    agency: U.S. Department of Energy
+    link: https://www.eia.gov/state/maps.php?src=home-f3
+    poc: Rob Bectel, Debbie Brodt-Giles & Jon Weers
+    email: robert.bectel@ee.doe.gov, Debbie.Brodt.Giles@nrel.gov, jon.weers@nrel.gov
+    problem-statement: zones
+    tag: DOE Data
+-
+    name: Atlas of Rural and Small-Town America
+    description: County-level data on county type, remoteness, amenities, and various socioeconomic factors.
+    agency: U.S. Department of Agriculture
+    link: https://www.ers.usda.gov/data-products/atlas-of-rural-and-small-town-america/
+    poc: Timothy Parker
+    email: tparker@ers.usda.gov
+    problem-statement: zones
+    tag: USDA Data
+-
+    name: Food Access Research Atlas
+    description: Census tract-level data on food access and supermarket accessibility.
+    agency: U.S. Department of Agriculture
+    link: https://www.ers.usda.gov/data-products/food-access-research-atlas/
+    poc: Timothy Parker
+    email: tparker@ers.usda.gov
+    problem-statement: zones
+    tag: USDA Data
+-
+    name: Quarterly Workforce Indicators
+    description: Metro area/state/WIA-level data on firms, industries and workers.
+    agency: U.S. Census Bureau
+    link: https://qwiexplorer.ces.census.gov/static/explore.html#x=0&g=0
+    poc: Andy Hait
+    email: Andrew.W.Hait@census.gov
+    problem-statement: talent
     tag: Census Bureau Economic Data
-- name: HUD Enterprise GIS
-  description: Web services for data including HUD, USDA, and Census.
-  agency: U.S. Department of Housing & Urban Development
-  link: http://hudgis-hud.opendata.arcgis.com/
-  poc: John Huggins
-  email: john.c.huggins@hud.gov
-  problem-statement: Zones
-  tags:
-    tag: HUD data
-- name: Map of Opportunity Zones and Affordable Housing
-  description: Public housing buildings, assisted multifamily properties, HUD-insured healthcare properties, Housing Choice Vouchers, LIHTC properties, USDA RD Developments, and Promise Zones.
-  agency: U.S. Department of Housing & Urban Development
-  link: https://hud.maps.arcgis.com/apps/View/index.html?appid=cc05a273151d40a7b2eff47dc70bd745
-  pocs:
-  poc: John Huggins
-  email: john.c.huggins@hud.gov
-  problem-statement: Zones
-  tags:
-    tag: HUD data
-- name: Low-Income Housing Tax Credit Qualified Census Tracts
-  description: Difficult Development Areas (DDA) are areas with high land, construction and utility costs relative to the area median income and are based on Fair Market Rents, income limits, the 2010 census counts, and 5-year American Community Survey (ACS) data.
-  agency: U.S. Department of Housing & Urban Development
-  link: https://www.huduser.gov/portal/datasets/qct.html
-  pocs:
-  poc: Mike Hollar
-  email: Michael.k.hollar@hud.gov
-  problem-statement: Zones
-  tags:
-    tag: HUD data
+-
+    name: County Business Patterns
+    description: Annual data on employer businesses (including number of businesses, employment, and payroll) at the state, county, metro area, and ZIP Code levels by 2- thru 6-digit NAICS codes.
+    agency: U.S. Census Bureau
+    link: https://www.census.gov/programs-surveys/cbp.html
+    poc: Andy Hait
+    email: Andrew.W.Hait@census.gov
+    problem-statement: zones entrepreneurship pathways talent
+    tag: Census Bureau Economic Data
+-
+    name: Non-Employer Statistics
+    description: Annual data on self-employed persons (including number of firms and revenue) at the state, county, and metro area levels by selected 2- thru 6-digit NAICS codes.
+    agency: U.S. Census Bureau
+    link: https://www.census.gov/programs-surveys/nonemployer-statistics/data.html
+    poc: Andy Hait
+    email: Andrew.W.Hait@census.gov
+    problem-statement: zones entrepreneurship pathways talent
+    tag: Census Bureau Economic Data
+-
+    name: Economic Census Data
+    description: Latest Economic Census data by place.
+    agency: U.S. Census Bureau
+    link: https://www.census.gov/programs-surveys/economic-census/data.html
+    poc: Andy Hait
+    email: Andrew.W.Hait@census.gov
+    problem-statement: talent
+    tag: Census Bureau Economic Data
+-
+    name: Survey of Business Owners (SBO)
+    description: Includes race and ethnicity of business owners from 2012.
+    agency: U.S. Census Bureau
+    link: https://www.census.gov/programs-surveys/sbo.html
+    poc: Andy Hait
+    email: Andrew.W.Hait@census.gov
+    problem-statement: talent
+    tag: Census Bureau Economic Data
+-
+    name: Annual Survey of Entrepreneurs
+    description: More current than Survey of Business Owners (SBO), but only available at state level.
+    agency: U.S. Census Bureau
+    link: https://www.census.gov/data/developers/data-sets/ase.html?#
+    poc: Andy Hait
+    email: Andrew.W.Hait@census.gov
+    problem-statement: talent
+    tag: Census Bureau Economic Data
+-
+    name: Employment Data from Census by Geography
+    description: Includes Industry and Occupation, Employers (public and private), Commuting, Labor Force Statistics, Work from Home.
+    agency: U.S. Census Bureau
+    link: https://www.census.gov/topics/employment.html
+    poc: Andy Hait
+    email: Andrew.W.Hait@census.gov
+    problem-statement: talent
+    tag: Census Bureau Economic Data
+-
+    name: Occupational Employment Statistics
+    description: Occupation profiles, metropolitan and nonmetropolitan areas, industry-specific data sets.
+    agency: U.S. Department of Labor
+    link: https://www.bls.gov/oes/tables.htm
+    poc: Pam Frugoli
+    email: frugoli.pam@dol.gov
+    problem-statement: talent
+    tag: Department of Labor data
+-
+    name: Integrated Postsecondary Education Data System
+    description: Students enrolled, degrees and awards earned, dollars expended, staff employed.
+    agency: U.S. Department of Education
+    link: https://nces.ed.gov/ipeds/datacenter/login.aspx
+    poc:
+    email: ipedstools@rti.org
+    problem-statement: talent
+    tag: Department of Education data
+-
+    name: Stats America
+    description: This tool allows you to view and download individual data items for any state, metro, micro, district or county in the nation.
+    agency:
+    link: http://www.statsamerica.org/
+    poc: Tim Slaper, Carol Rogers & Riley Zipper
+    email: tslaper@indiana.edu, rogersc@iupui.edu, zipperr@iu.edu
+    problem-statement: talent
+    tag:
+-
+    name: Cluster Mapping
+    description: This tool a national initiative that provides open data on regional clusters and economies to support U.S. business, innovation and policy.
+    agency: Economic Development Administration
+    link: https://clustermapping.us/
+    poc:
+    email:
+    problem-statement: talent
+    tag:
+-
+    name: Inventor and entrepreneur resources
+    description: Resources about protecting intellectual property, including listings for pro bono attorney representation.
+    agency: U.S. Patent and Trademark Office
+    link: https://www.uspto.gov/learning-and-resources/inventors-entrepreneurs-resources
+    poc:
+    email:
+    problem-statement: talent
+    tag:
+-
+    name: List of Federal efforts supporting entrepreneurship
+    description: Federal organizations, programs, policies, and statistics focused on entrepreneurship.
+    agency: George Washington University
+    link: https://gwipp.gwu.edu/sites/g/files/zaxdzs2181/f/downloads/Reamer%20federal%20entrepreneurship%20reference%20draft%2004-13-17.pdf
+    poc:
+    email:
+    problem-statement: talent
+    tag:
+-
+    name: Monthly Industry Indicators
+    description: Data as recent as July 2019.
+    agency: U.S. Census Bureau
+    link: https://www.census.gov/economic-indicators/
+    poc: Andy Hait
+    email: Andrew.W.Hait@census.gov
+    problem-statement: entrepreneurship
+    tag: Census Bureau data
+-
+    name: Inventor and entrepreneur resources
+    description: Resources about protecting intellectual property, including listings for pro bono attorney representation.
+    agency: U.S. Patent and Trademark Office
+    link: https://www.uspto.gov/learning-and-resources/inventors-entrepreneurs-resources
+    poc:
+    email:
+    problem-statement: entrepreneurship
+    tag:
+-
+    name: List of Federal efforts supporting entrepreneurship
+    description: Federal organizations, programs, policies, and statistics focused on entrepreneurship.
+    agency: George Washington University
+    link: https://gwipp.gwu.edu/sites/g/files/zaxdzs2181/f/downloads/Reamer%20federal%20entrepreneurship%20reference%20draft%2004-13-17.pdf
+    poc:
+    email:
+    problem-statement: entrepreneurship
+    tag:
+-
+    name: National Center for Science and Engineering Statistics
+    description: Data on research and development, the science and engineering workforce, the condition and progress of STEM education, and US competitiveness in science, engineering, technology, and R&D.
+    agency: National Science Foundation
+    link: https://www.nsf.gov/statistics/data.cfm
+    poc:
+    email:
+    problem-statement: entrepreneurship
+    tag: National Science Foundation data
+-
+    name: National Science Foundation Awards
+    description: Data on National Science Foundation awards.
+    agency: National Science Foundation
+    link: https://www.nsf.gov/awardsearch/
+    poc:
+    email:
+    problem-statement: entrepreneurship
+    tag: National Science Foundation data
+-
+    name: National Institutes of Health Awards
+    description: Data on National Institutes of Health awards.
+    agency: National Institutes of Health
+    link: https://projectreporter.nih.gov/
+    poc: Matt McMahon
+    email: matthew.mcmahon@nih.gov
+    problem-statement: entrepreneurship
+    tag: National Institutes of Health
+-
+    name: Small Business Innovation Research (SBIR) Program Data
+    description: The SBIR program helps technology companies further develop inventions, and bring them to market.
+    agency: Small Business Administration
+    link: https://www.sbir.gov/api
+    poc: JP Verostek
+    email: jverostek@dawnbreaker.com
+    problem-statement: entrepreneurship
+    tag: Small Business Administration data
+-
+    name: Lab Partnering Service (LPS)
+    description: The LPS enables rapid discovery of expertise and serves as a conduit between the investor and the innovator by providing multi-faceted search capability across numerous technology areas and across the national laboratories.
+    agency: U.S. Department of Energy
+    link: https://www.labpartnering.org/p/
+    poc: Rob Bectel
+    email: robert.bectel@ee.doe.gov
+    problem-statement: entrepreneurship
+    tag: U.S. Department of Energy
+-
+    name: Open Energy Information
+    description: Open energy datasets coming from DOE and its national labs.
+    agency: U.S. Department of Energy
+    link: https://openei.org/wiki/Data
+    poc: Debbie Brodt-Giles
+    email: Debbie.Brodt.Giles@nrel.gov
+    problem-statement: entrepreneurship
+    tag: U.S. Department of Energy
+-
+    name: Federal Laboratory Consortium (FLC) Data
+    description: The Federal Laboratory Consortium for Technology Transfer (FLC) is the formally chartered, nationwide network of over 300 federal laboratories, agencies, and research centers that fosters commercialization best practice strategies and opportunities for accelerating federal technologies from out of the labs and into the marketplace.
+    agency: Federal Laboratory Consortium for Technology Transfer
+    link: https://www.federallabs.org/flcbusiness
+    poc:
+    email:
+    problem-statement: entrepreneurship
+    tag: Federal Laboratory Consortium for Technology Transfer
+-
+    name: Small Business Administration Datasets
+    description: Regional Innovation Clusters, Small Business Development Center, Women’s Business Center, Veteran’s Business Outreach Center, Procurement Technical Assistance Centers.
+    agency: Small Business Administration
+    link: https://catalog.data.gov/dataset?q=SBA
+    poc:
+    email:
+    problem-statement: entrepreneurship
+    tag: Small Business Administration data
+-
+    name: Manufacturing Extension Partnership (MEP)
+    description: 'The Manufacturing Extension Partnership Program (MEP) is a national network with hundreds of specialists who understand the needs of America''s small manufacturers. MEP provides companies with services and access to public and private resources to enhance growth, improve productivity, reduce costs, and expand capacity.'
+    agency: National Institute of Standards and Technology
+    link: https://www.nist.gov/mep/centers
+    poc:
+    email:
+    problem-statement: entrepreneurship
+    tag: National Institute of Standards and Technology data
+-
+    name: Manufacturing USA Institutes
+    description: Manufacturing USA consists of a national network of linked manufacturing institutes. Each has a unique technological concentration, but is also designed to accelerate U.S. advanced manufacturing as a whole.
+    agency: Manufacturing USA
+    link: https://www.manufacturingusa.com/institutes
+    poc:
+    email:
+    problem-statement: entrepreneurship
+    tag:
+-
+    name: College Scorecard
+    description: The College Scorecard is designed to increase transparency, putting the power in the hands of the public — from those choosing colleges to those improving college quality — to see how well different schools are serving their students.
+    agency: U.S. Department of Education
+    link: https://collegescorecard.ed.gov/
+    poc:
+    email: scorecarddata@rti.org
+    problem-statement: pathways
+    tag: U.S. Department of Education data
+-
+    name: Occupational Outlook Handbook
+    description: The Occupational Outlook Handbook (OOH) provides information on what workers do; the work environment; education, training, and other qualifications; pay; the job outlook; information on state and area data; similar occupations; and sources of additional information, for 325 occupational profiles, covering about 4 out of 5 jobs in the economy.
+    agency: Bureau of Labor Statistics
+    link: https://www.bls.gov/ooh/
+    poc: Amrit Kohli
+    email: Kohli.amrit@bls.gov
+    problem-statement: pathways
+    tag: Labor data
+-
+    name: O*NET Web Services
+    description: An API developers can use to display O*NET characteristics and requirements information for 974 occupations in their applications, and take advantage of tools such as the occupation keyword search featured in My Next Move and O*NET OnLine.
+    agency: U.S. Department of Labor
+    link: https://www.onetonline.org
+    poc: Pam Frugoli
+    email: frugoli.pam@dol.gov
+    problem-statement: pathways
+    tag: Labor data
+-
+    name: Apprenticeship Available Occupations
+    description: Apprenticeships can be found in all industries, from traditional sectors like Construction and Manufacturing to emerging sectors like Energy and Health Care. This data set contains information on all available occupations in Registered Apprenticeships.
+    agency: U.S. Department of Labor
+    link: https://www.doleta.gov/OA/occupations.cfm
+    poc:
+    email:
+    problem-statement: pathways
+    tag:
+-
+    name: CareerOneStop
+    description: "Offers a wide range of career, employment, and education data as Web API Services, allowing third parties to obtain quality-controlled data sets and seamlessly integrate them into their own websites.\n"
+    agency: U.S. Department of Labor
+    link: https://www.careeronestop.org/Developers/WebAPI/web-api.aspx
+    poc:
+    email:
+    problem-statement: pathways
+    tag:
+-
+    name: Apprenticeship Finder
+    description: Search for available apprenticeships in a variety of fields around the country.
+    agency: U.S. Department of Labor
+    link: https://www.apprenticeship.gov/apprenticeship-finder
+    poc:
+    email:
+    problem-statement: pathways
+    tag:
+-
+    name: API & Developer Resources for Census Bureau Data
+    description: Developer resources for Census Bureau Data.
+    agency: U.S Census Bureau
+    link: https://www.census.gov/developers/
+    poc: Logan Powell
+    email: logan.t.powell@census.gov
+    problem-statement: zones entrepreneurship pathways talent
+    tag: Census Bureau data
+-
+    name: Housing Assistance Data
+    description: This dataset lists aggregated, non-PII data of FEMA Housing Assistance Program primarily composed of data from Housing Assistance Program reporting authority from FEMA registration renters and owners within the state, county, zip where the registration is valid.
+    agency: Federal Emergency Management Agency
+    link: https://www.fema.gov/media-library/assets/documents/34758
+    poc:
+    email:
+    problem-statement: zones entrepreneurship pathways talent
+    tag: Federal Emergency Management Agency
+-
+    name: Individual Assistance Data
+    description: Individual Assistance (IA) is provided by the Federal Emergency Management Agency (FEMA) to individuals and families who have sustained losses due to disasters.
+    agency: Federal Emergency Management Agency
+    link: https://www.fema.gov/media-library/assets/documents/132213
+    poc:
+    email:
+    problem-statement: zones entrepreneurship pathways talent
+    tag: Federal Emergency Management Agency
+-
+    name: CDC Social Vulnerability Index
+    description: 'CDC''s Social Vulnerability Index uses 15 U.S. census variables at tract level to help local officials identify communities that may need support in preparing for hazards; or recovering from disaster.'
+    agency: Center for Disease Control
+    link: https://svi.cdc.gov/
+    poc:
+    email:
+    problem-statement: zones entrepreneurship pathways talent
+    tag: Center for Disease Control
+-
+    name: Business Formation Statistics
+    description: This data offers a timely and frequent snapshot of early-stage business formation activity.  It looks at trends in business applications and formations at the state, regional and national level.
+    agency: U.S. Census Bureau
+    link: https://www.census.gov/programs-surveys/bfs/data/datasets.html
+    poc: Andy Hait
+    email: Andrew.W.Hait@census.gov
+    problem-statement: zones entrepreneurship pathways talent
+    tag: U.S. Census Bureau
+-
+    name: JobKit
+    description: A White House Initiative that includes links and documentation for federal open APIs related to workforce and education
+    agency: U.S. Census Bureau
+    link: https://opportunity.census.gov/jobkit.html
+    poc: David Rogers
+    email: david.r.rogers@who.eop.gov
+    problem-statement: zones entrepreneurship pathways talent
+    tag: U.S. Census Bureau
+-
+    name: Regional Innovation Strategies (RIS) Program
+    description: EDA’s Office of Innovation and entrepreneurship (OIE) leads the RIS Program, which awards grants through two annual competitions&#58; the i6 Challenge and Seed Fund Support. From 2014 &ndash; 2019, the RIS program made over $100 million in Federal investments to 224 organizations across 47 states and 2 territories (DC and Puerto Rico) to create and expand high-growth entrepreneurship and increase access to capital.
+    agency: Economic Development Agency
+    link: https://www.eda.gov/oie/ris/i6/
+    poc: Emily Miller
+    email: emiller@eda.gov
+    problem-statement: entrepreneurship
+    tag: Economic Development Agency data
+-
+    name: TechLink&#58; DoD and VA Inventions
+    description: Over 5,000 DoD and VA inventions available in virtually all technology fields, searchable by keyword.
+    agency:
+    link: https://techlinkcenter.org/technologies-all/
+    poc:
+    email:
+    problem-statement: entrepreneurship
+    tag:
+-
+    name: CyberSeek
+    description: Hack the Gap&#58; Close the cybersecurity talent gap with interactive tools and data.
+    agency: National Institute of Standards and Technology
+    link: https://www.cyberseek.org/
+    poc:
+    email:
+    problem-statement: pathways
+    tag:
+-
+    name: TIGER&#58; Line Roads Data
+    description: TIGER/Line files are a digital database of geographic features, such as roads, railroads, rivers, lakes, legal boundaries, census statistical boundaries, etc. covering the entire United States.
+    agency: U.S. Census Bureau
+    link: ftp://ftp2.census.gov/geo/tiger/TIGER2017/ROADS/
+    poc:
+    email:
+    problem-statement: zones entrepreneurship pathways talent
+    tag: U.S. Census Bureau
+-
+    name: TIGER&#58; Line Address Range-Feature
+    description: TIGER/Line files are a digital database of geographic features, such as roads, railroads, rivers, lakes, legal boundaries, census statistical boundaries, etc. covering the entire United States.
+    agency: U.S. Census Bureau
+    link: ftp://ftp2.census.gov/geo/tiger/TIGER2017/ADDRFEAT/
+    poc:
+    email:
+    problem-statement: zones entrepreneurship pathways talent
+    tag: U.S. Census Bureau
+-
+    name: American Community Survey &ndash; Population Data
+    description: The American Community Survey (ACS) helps local officials, community leaders, and businesses understand the changes taking place in their communities. It is the premier source for detailed population and housing information about our nation.
+    agency: U.S. Census Bureau
+    link: https://www.census.gov/programs-surveys/acs/
+    poc: Eric Coyle & Logan Powell
+    email: eric.a.coyle@census.gov, logan.t.powell@census.gov
+    problem-statement: zones entrepreneurship pathways talent
+    tag: U.S. Census Bureau

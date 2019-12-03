@@ -1,7 +1,7 @@
 .usa-footer {
   background-color: $color-primary;
   text-align: center;
-  padding: 20rem 0;
+  padding: 20rem 0 10rem 0;
 
   .data-source__button {
     background-color: transparent;
@@ -20,6 +20,12 @@
   }
 }
 
+
+@keyframes show {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .modal {
   background-color: RGB($color-primary-dark-rgb, 0.9);
   position: fixed;
@@ -30,6 +36,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  animation-name: show;
+  animation-fill-mode: forwards;
+  animation-duration: 400ms;
   &--hidden {
     display: none;
   }

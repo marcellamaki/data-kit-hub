@@ -1,5 +1,22 @@
 - name: All datasets
+  filter: all
 - name: Opportunity Zones
+  filter: zones
+  title: Investment in Opportunity Zones
+  description: Recommended datasets for connecting investors with community leaders, entrepreneurs, and workers of America’s 8,764 Opportunity Zones.
+  image: opportunity-zones.png
 - name: Entrepreneurship
+  filter: entrepreneurship
+  title: Entreneurship
+  description: Entrepreneurship description
+  image: entrepreneurship.png
 - name: Career Pathways
+  filter: pathways
+  title: Career Pathways
+  description: Career Pathways description
+  image: pathways.png
 - name: Talent Discovery
+  filter: talent
+  title: Talent Discovery
+  description: Talent Discovery description
+  image: talent.png
