@@ -40,7 +40,7 @@ PATHS
 const PROJECT_SASS_SRC = '_sass';
 
 // Images destination
-const IMG_DEST = 'assets/img';
+const IMG_DEST = 'assets/images';
 
 // Fonts destination
 const FONTS_DEST = 'assets/fonts';

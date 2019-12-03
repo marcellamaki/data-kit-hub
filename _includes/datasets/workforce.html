@@ -1,0 +1,38 @@
+{% assign datasets = site.data.workforce %}
+{% assign topics = site.data.workforce-topics %}
+
+<div class="topics">
+  <div class="topics__container grid-container">
+    <div class="topics__row grid-row">
+      {% for topic in topics %}
+        <div class="topics__card grid-col-2">
+          <p>{{topic.name}}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="datasets">
+  <div class="datasets__container grid-container">
+    <div class="datasets__row grid-row">
+      {% for data in datasets %}
+      <div class="datasets__card grid-col-4">
+        <a class="datasets__card-link" href="{{data.link}}" target="_blank">
+        <div class="datasets__card-arrow">
+          <img src="/assets/images/icons/arrow-tab.svg" alt="Arrow Icon">
+        </div>
+        <h3 class="datasets__card-title">{{data.name}}</h3>
+        <p class="datasets__card-subtitle"><span>by </span>{{data.agency}}</p>
+        <p class="datasets__card-description">{{data.description}}</p>
+        <a href="mailto:{{data.email}}?subject=Inquiry:%20{{data.name}}&body=Hi%20{{data.poc}},">
+          <div class="datasets__card-email">
+            Contact
+          </div>
+        </a>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+- name: Census Business Builder
+  description: Includes building permits data that is not in the Census API yet.
+  agency: U.S. Census Bureau
+  link: https://www.census.gov/data/data-tools/cbb.html
+  poc: Andy Hait
+  email: Andrew.W.Hait@census.gov
+  problem-statement: Entrepreneurship
+  tags:
+    tag: Census Bureau Economic Data
+- name: American Community Survey - Available APIs
+  description: Resources for demographic information at the Census tract level, available in Census API.
+  agency: U.S. Census Bureau
+  link: https://www.census.gov/data/developers/data-sets.html
+  poc: Andy Hait
+  email: Andrew.W.Hait@census.gov
+  problem-statement: Zones
+  tags:
+    tag: Census Bureau Economic Data
+- name: Zip Code Business Patterns
+  description: Annual statistics for businesses with paid employees within the U.S. at the ZIP Code level. Information is available on the number of establishments, employment, first quarter payroll, and annual payroll.
+  agency: U.S. Census Bureau
+  link: https://www.census.gov/data/developers/data-sets/cbp-nonemp-zbp/zbp-api.html
+  poc: Andy Hait
+  email: Andrew.W.Hait@census.gov
+  problem-statement: Zones
+  tags:
+    tag: Census Bureau Economic Data
+- name: USA Trade Data
+  description: Census Bureau holds monthly data that is very detailed geographically.
+  agency: U.S. Census Bureau
+  link: https://usatrade.census.gov/
+  poc: Andy Hait
+  email: Andrew.W.Hait@census.gov
+  problem-statement: Zones
+  tags:
+    tag: Census Bureau Economic Data
+- name: American Community Survey - Demographic Data
+  description: Tract-level data on household characteristics; industry and occupation, broken out by demographic characteristics of workers.
+  agency: U.S. Census Bureau
+  link: https://www.census.gov/data/developers/data-sets/acs-5year.html
+  poc: Eric Coyle
+  email: Eric.A.Coyle@census.gov
+  problem-statement: Zones
+  tags:
+    tag: Census Bureau Economic Data
+- name: HUD Enterprise GIS
+  description: Web services for data including HUD, USDA, and Census.
+  agency: U.S. Department of Housing & Urban Development
+  link: http://hudgis-hud.opendata.arcgis.com/
+  poc: John Huggins
+  email: john.c.huggins@hud.gov
+  problem-statement: Zones
+  tags:
+    tag: HUD data
+- name: Map of Opportunity Zones and Affordable Housing
+  description: Public housing buildings, assisted multifamily properties, HUD-insured healthcare properties, Housing Choice Vouchers, LIHTC properties, USDA RD Developments, and Promise Zones.
+  agency: U.S. Department of Housing & Urban Development
+  link: https://hud.maps.arcgis.com/apps/View/index.html?appid=cc05a273151d40a7b2eff47dc70bd745
+  pocs:
+  poc: John Huggins
+  email: john.c.huggins@hud.gov
+  problem-statement: Zones
+  tags:
+    tag: HUD data
+- name: Low-Income Housing Tax Credit Qualified Census Tracts
+  description: Difficult Development Areas (DDA) are areas with high land, construction and utility costs relative to the area median income and are based on Fair Market Rents, income limits, the 2010 census counts, and 5-year American Community Survey (ACS) data.
+  agency: U.S. Department of Housing & Urban Development
+  link: https://www.huduser.gov/portal/datasets/qct.html
+  pocs:
+  poc: Mike Hollar
+  email: Michael.k.hollar@hud.gov
+  problem-statement: Zones
+  tags:
+    tag: HUD data
