@@ -4,6 +4,14 @@
   width: 100%;
   z-index: 10;
 
+  @include media-sm {
+    display: block;
+    position: inherit;
+  }
+
+  &__primary-item {
+    border-top: none;
+  }
   .nav-left {
     float: left;
     max-width: 20rem;

@@ -22,3 +22,7 @@
 @mixin divOpacity($color, $opacity) {
 	background: RGB($color, $opacity);
 }
+
+@mixin media-sm {
+	@media (max-width: $large-screen) { @content; }
+}
