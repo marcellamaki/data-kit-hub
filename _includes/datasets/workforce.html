@@ -6,9 +6,9 @@
     <div class="topics__row grid-row">
       {% for topic in topics %}
       {% if topic.filter == "all" %}
-        <div class="topics__card grid-col-2 topics__card--active" onclick="filterSelection('{{topic.filter}}')">
+        <div class="topics__card grid-col-auto topics__card--active" onclick="filterSelection('{{topic.filter}}')">
       {% else %}
-        <div class="topics__card grid-col-2" onclick="filterSelection('{{topic.filter}}')">
+        <div class="topics__card grid-col-auto" onclick="filterSelection('{{topic.filter}}')">
       {% endif %}
           <p>{{topic.name}}</p>
         </div>
@@ -23,7 +23,7 @@
 <div class="challenge">
   <div class="grid-container">
     <div class="challenge__container {{topic.filter}} grid-row">
-      <div class="challenge__image grid-col-2">
+      <div class="challenge__image grid-col-4 tablet:grid-col-2">
           <img class="" src="{{site.baseurl}}/assets/images/challenges/{{topic.image}}" alt="{{topic.title}}">
       </div>
       <div class="challenge__text grid-col-5">
@@ -31,6 +31,7 @@
         <h3 class="challenge__text-title">{{topic.title}}</h3>
         <p class="challenge__text-description">{{topic.description}}</p>
       </div>
+      <p class="challenge__text-description-mobile">{{topic.description}}</p>
     </div>
   </div>
 </div>
@@ -41,7 +42,7 @@
   <div class="datasets__container grid-container">
     <div class="datasets__row grid-row">
       {% for data in datasets %}
-      <div class="datasets__card grid-col-4 {{data.problem-statement}} ">
+      <div class="datasets__card grid-col-12 tablet:grid-col-4 {{data.problem-statement}} ">
         <a class="datasets__card-link" href="{{data.link}}" target="_blank">
         <div class="datasets__card-arrow">
           <img src="/assets/images/icons/arrow-tab.svg" alt="Arrow Icon">

@@ -503,3 +503,12 @@
     email: eric.a.coyle@census.gov, logan.t.powell@census.gov
     problem-statement: zones entrepreneurship pathways talent
     tag: U.S. Census Bureau
+-
+    name: Apprenticeship Available Occupations
+    description: Apprenticeships can be found in all industries, from traditional sectors like Construction and Manufacturing to emerging sectors like Energy and Health Care. This data set contains information on all available occupations in Registered Apprenticeships.
+    agency: U.S. Department of Labor
+    link: https://www.doleta.gov/OA/occupations.cfm
+    poc:
+    email:
+    problem-statement: pathways
+    tag:

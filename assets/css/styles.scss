@@ -9,15 +9,15 @@ $theme-image-path:  '../uswds/img';
 @import "uswds/uswds";
 @import "uswds_overrides";
 @import 'mixins';
-@import "typography";
 @import "variables";
+@import "typography";
 @import "nav";
 @import "links";
 @import "banner";
 @import "landing";
 @import "hero";
 @import "tag";
-@import "data-pack";
+@import "data-kits";
 @import "footer";
 @import "datasets";
 

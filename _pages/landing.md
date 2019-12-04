@@ -3,8 +3,9 @@ title: Home
 layout: base
 permalink: /
 hero:
-  text: Data Kits
-  subtext: Federal open data resources. Curated by government experts, test-driven by industry, and organized into starter packs to help you innovate the nation’s biggest challenges.
+  text: Curated Datasets
+  caption: The Opportunity Project
+  subtext: Discover issue-specific data recommended by government experts and test-driven by teams working to solve the nation’s biggest challenges.
   tag: Beta
 ---
 
