@@ -3,9 +3,9 @@ title: Workforce
 layout: base
 permalink: /workforce/
 hero:
-  text: Workforce Issues
+  text: Workforce Challenges
   subtext: Datasets on workers, businesses, jobs, credentials, and more, recommended by government experts for solving key workforce challenges.
-  tag: Data Kit
+  tag: Theme
   image: /assets/images/hero/workforce.png
 ---
 

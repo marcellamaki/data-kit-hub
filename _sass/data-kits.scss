@@ -1,7 +1,7 @@
-.data-pack__container {
+.data-kit__container {
   position: relative;
 
-  .data-pack__card {
+  .data-kit__card {
     width: 90%;
     position: relative;
     height: 35rem;
@@ -26,13 +26,13 @@
       line-height: $line-height-m;
       margin-bottom: 2rem;
     }
-    .data-pack__arrow {
+    .data-kit__arrow {
       float: right;
       transition: all 500ms ease;
     }
     h2,
     p,
-    .data-pack__arrow {
+    .data-kit__arrow {
       position: relative;
       z-index: 10;
     }
@@ -51,11 +51,11 @@
     }
   }
 
-  .data-pack__active {
+  .data-kit__active {
     transition: transform 400ms ease;
     &:hover {
       transform: translate(-5px, -10px);
-      .data-pack__arrow {
+      .data-kit__arrow {
         animation: bounce 2s infinite;
       }
       &::after {
@@ -64,7 +64,7 @@
     }
   }
 
-  .data-pack__bg {
+  .data-kit__bg {
     height: 40rem;
     width: 90%;
     background-color: $color-primary-dark;
@@ -74,7 +74,7 @@
     top: 1.5rem;
     left: 1.5rem;
   }
-  .data-pack__upcoming {
+  .data-kit__upcoming {
     text-transform: uppercase;
     font-size: $font-size-xxs;
     color: $color-primary-dark;
@@ -87,7 +87,7 @@
     bottom: 1.5rem;
     right: 2rem;
   }
-  .data-pack__stats {
+  .data-kit__stats {
     color: $color-primary-dark;
     font-weight: 700;
     letter-spacing: 0.8px;
@@ -97,7 +97,7 @@
     position: absolute;
     bottom: 1.5rem;
     right: 2rem;
-    .data-pack__icon-items {
+    .data-kit__icon-items {
       display: inline-block;
       margin-right: 0.5rem;
       vertical-align: middle;
@@ -112,18 +112,18 @@
   }
 }
 
-.data-pack__button {
+.data-kit__button {
   text-decoration: none;
 }
 
-.data-pack__suggest {
+.data-kit__suggest {
   transition: all 400ms ease;
   @include borderOpacity($color-white-rgb, 0.5);
   border-radius: 10px;
   width: 100%;
   text-align: center;
   padding: 12em 0;
-  .data-pack__icon-suggestion {
+  .data-kit__icon-suggestion {
     opacity: 0.8;
   }
   p {
@@ -135,7 +135,7 @@
 
   &:hover {
     @include borderOpacity($color-white-rgb, 1);
-    .data-pack__icon-suggestion,
+    .data-kit__icon-suggestion,
     p {
       opacity: 1;
     }

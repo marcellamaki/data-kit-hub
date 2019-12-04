@@ -1,10 +1,12 @@
 {% if page.title == "Home" %}
+{% assign hero = page.hero %}
 <section class="usa-hero">
   <div class="grid-container">
     <div class="usa-hero__callout">
-      <h2 class="usa-hero__heading"><span class="usa-hero__heading--alt">Data Packs</span>
+      <h2 class="usa-hero__heading"><span class="usa-hero__heading--alt">{{ hero.text}}</span>
       </h2>
-      <p>{{ page.hero.subtext }}</p>
+      <h6><span>by </span>{{ hero.caption }}</h6>
+      <p>{{ hero.subtext }}</p>
     </div>
   </div>
 {% else %}

@@ -18,7 +18,7 @@ primary_navigation:
     url: /
 
 secondary_navigation:
-  - name: Data Kits
+  - name: Curated Datasets
     url: /
 
 ##########################################################################################
