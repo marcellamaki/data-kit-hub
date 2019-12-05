@@ -58,7 +58,7 @@
         left: 0;
         right: 0;
         border-radius: 10px;
-        @include divOpacity($color-primary-dark-rgb, 0.5)
+        @include divOpacity($color-primary-dark-rgb, 0.6)
       }
     }
 

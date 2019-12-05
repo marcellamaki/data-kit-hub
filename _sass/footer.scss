@@ -6,6 +6,11 @@
   .data-source__button {
     background-color: transparent;
     border: none;
+    &:hover {
+      .data-source p {
+        border-bottom-style: solid;
+      }
+    }
   }
   .data-source {
 
@@ -16,6 +21,7 @@
       font-size: $font-size-s;
       line-height: 30px;
       border-bottom: 1.5px dotted $color-secondary;
+      transition: border-bottom 400ms ease;
     }
   }
 }
@@ -44,7 +50,7 @@
     display: none;
   }
   &__contents {
-    max-width: 50rem;
+    max-width: 53rem;
     background-color: $color-primary;
     padding: 2rem 4rem;
     color: $color-white;
@@ -58,6 +64,19 @@
       font-weight: 400;
       font-size: $font-size-s;
       line-height: $line-height-s;
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        color: $color-white;
+        transition: font-style 400ms ease;
+        text-decoration: underline;
+        &:visited {
+          color: inherit;
+        }
+        &:hover {
+          font-weight: 600;
+        }
+      }
     }
     &-close {
       font-size: $font-size-xxs;

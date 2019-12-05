@@ -7,16 +7,16 @@
   image: opportunity-zones.png
 - name: Entrepreneurship
   filter: entrepreneurship
-  title: Entreneurship
-  description: Entrepreneurship description
+  title: Unleash American Entrepreneurship
+  description: Recommended datasets for empowering entrepreneurs and innovation ecosystem builders to find and navigate the variety of resources available across the federal government.
   image: entrepreneurship.png
 - name: Career Pathways
   filter: pathways
-  title: Career Pathways
-  description: Career Pathways description
+  title: Pathways for Career Growth
+  description: Recommended datasets for helping American workers consider and take advantage of the multiple pathways available to find or advance in careers.
   image: pathways.png
 - name: Talent Discovery
   filter: talent
-  title: Talent Discovery
-  description: Talent Discovery description
+  title: Modernize Talent Discovery
+  description: Recommended datasets for transforming talent discovery, matching, and retention in mid-size cities across the country, to help them achieve innovation and regional economic growth.
   image: talent.png
