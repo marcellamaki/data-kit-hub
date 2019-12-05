@@ -6,7 +6,7 @@
       {% assign basedir = page.url | remove_first: '/' | split: '/' | first | lstrip %}
       {% assign linkdir = nav_item.url | replace: "/", "" | lstrip %}
       <li class="usa-nav__primary-item">
-        <a href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name | escape }}</span></a>
+        <a href="{{ nav_item.url }}"><span>{{ nav_item.name | escape }}</span></a>
       </li>
       {% endfor %}
       </ul>

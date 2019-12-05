@@ -14,12 +14,12 @@ url: "https://opportunity.census.gov"
 
 # Site Navigation
 primary_navigation:
-  - name: The Opportunity Project
-    url: /
+  - name: Main Website
+    url: https://opportunity.census.gov
 
 secondary_navigation:
   - name: Curated Datasets
-    url: /curated-datasests
+    url: /
 
 ##########################################################################################
 # The values below here are more advanced and should only be
