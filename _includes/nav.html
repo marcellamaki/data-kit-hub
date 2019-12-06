@@ -2,6 +2,7 @@
   <nav role="navigation" class="usa-nav">
     <div class="nav-left">
       <ul>
+      {% if page.title == "Home" %}
       {% for nav_item in include.primary_navigation %}
       {% assign basedir = page.url | remove_first: '/' | split: '/' | first | lstrip %}
       {% assign linkdir = nav_item.url | replace: "/", "" | lstrip %}
@@ -9,16 +10,16 @@
         <a href="{{ nav_item.url }}"><span>{{ nav_item.name | escape }}</span></a>
       </li>
       {% endfor %}
-      </ul>
-    </div>
-    <div class="nav-right">
-      <ul>
+
+      {% else %}
       {% for nav_item in include.secondary_navigation %}
       <li>
         <a href="{{ nav_item.url | prepend: site.baseurl }}">{{ nav_item.name | escape }}</a>
       </li>
-      </ul>
       {% endfor %}
+
+      {% endif %}
+      </ul>
     </div>
   </nav>
 </header>

@@ -102,6 +102,22 @@
           display: none;
         }
       }
+      &-link {
+        font-size: $font-size-s;
+        font-weight: 400;
+        transition: all 400ms ease;
+        a {
+          color: $color-white;
+          -webkit-text-decoration: $color-secondary dotted underline;
+          text-decoration: $color-secondary dotted underline;
+          -webkit-text-underline-position: under;
+          text-underline-position: under;
+
+          &:hover {
+            text-decoration-style: solid;
+          }
+        }
+      }
     }
     &__text-description-mobile {
       display: none;
@@ -114,6 +130,22 @@
       @include media-sm {
         display: block;
         margin-top: 2rem;
+      }
+    }
+    &__text-link-mobile {
+      display: none;
+      font-size: $font-size-s;
+      font-weight: 400;
+      transition: all 400ms ease;
+      a {
+        color: $color-white;
+        -webkit-text-decoration: $color-secondary dotted underline;
+        text-decoration: $color-secondary dotted underline;
+        -webkit-text-underline-position: under;
+        text-underline-position: under;
+      }
+      @include media-sm {
+        display: block;
       }
     }
 }
@@ -191,6 +223,7 @@
       bottom: -1rem;
       font-size: $font-size-xs;
       color: $color-primary-dark;
+      font-weight: 500;
       @include media-sm {
         opacity: 1;
       }

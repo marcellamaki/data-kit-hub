@@ -24,6 +24,10 @@ $path-to-fonts: '../fonts';
 // Setting responsive rem type
 html {
   font-size: 10px;
+  font-family: $font-sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   @include media-sm {
     font-size: 9px;
   }

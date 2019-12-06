@@ -7,9 +7,9 @@
 $theme-font-path:   '../uswds/fonts';
 $theme-image-path:  '../uswds/img';
 @import "uswds/uswds";
-@import "uswds_overrides";
 @import 'mixins';
 @import "variables";
+@import "uswds_overrides";
 @import "typography";
 @import "nav";
 @import "links";
