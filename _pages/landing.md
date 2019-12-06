@@ -5,7 +5,7 @@ permalink: /
 hero:
   text: Curated Datasets
   caption: The Opportunity Project
-  subtext: Discover issue-focused data recommended by government experts and test-driven by teams working to solve the nation’s biggest challenges.
+  subtext: Discover issue-specific data recommended by government experts and test-driven by teams working to solve the nation’s biggest challenges.
   tag: Beta
 ---
 
