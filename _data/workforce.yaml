@@ -161,7 +161,7 @@
     problem-statement: talent
 -
     name: Occupational Employment Statistics
-    description: Occupation profiles and other data available nationally, by state, and by metropolitan and nonmetropolitan areas, and by industry and ownership.
+    description: Employment and wage estimates by occupation based on a survey of business establishments. Data are available for all industries combined for the nation; states, the District of Columbia, and selected U.S. territories; and metropolitan and nonmetropolitan areas. National data by industry or by public/private sector ownership are also available.
     agency: U.S. Department of Labor
     link: https://www.bls.gov/oes/tables.htm
     poc: Amrit Kohli
