@@ -39,7 +39,8 @@
 {% endfor %}
 
 <div class="datasets">
-  <div class="datasets__container grid-container">
+  <div id="data-to-filter" class="datasets__container grid-container">
+    <input type="text" id="myInput" onkeyup="searchDatasets()" placeholder="Type some keywords">
     <div class="datasets__row grid-row">
       {% for data in datasets %}
       <div class="datasets__card grid-col-12 tablet:grid-col-4 {{data.problem-statement}} ">
