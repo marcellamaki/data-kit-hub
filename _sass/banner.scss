@@ -9,10 +9,19 @@
   &__header-text {
     font-size: $font-size-xxs;
   }
+  &__header-flag {
+    float: left ;
+    margin-right: 8px;
+    width: 16px; }
+  }
   @include media-sm {
     display: block;
   }
-}
+  @media all and (min-width: 40em) {
+    .usa-banner__header-flag {
+      margin-right: 8px;
+      padding-top: 0; }
+  }
 
 .usa-accordion {
   color: $color-white;
